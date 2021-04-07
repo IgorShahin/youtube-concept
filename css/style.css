@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: "MulishRegular";
+}
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .header {
   display: flex;
@@ -109,6 +113,12 @@
   color: #898989;
   text-decoration: none;
 }
+.nav-link:hover {
+  color: #ff0000;
+}
+.nav-link:hover .icon {
+  fill: #ff0000;
+}
 .nav-item .icon {
   fill: #898989;
 }
@@ -119,11 +129,4 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-}
-
-@font-face {
-  font-family: "MulishRegular";
-  src: url("../fonts/Mulish-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
