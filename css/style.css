@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-}
-.body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "MulishRegular";
 }
 .header {
   display: flex;
@@ -11,6 +9,7 @@
   padding-bottom: 20px;
   padding-left: 32px;
   padding-right: 70px;
+  margin-bottom: 30px;
 }
 .menu-button {
   padding: 0;
@@ -23,6 +22,9 @@
   border: none;
   margin-right: 28px;
   cursor: pointer;
+}
+.menu-button:focus {
+  outline: none;
 }
 .menu-line {
   display: block;
@@ -38,18 +40,24 @@
   background: #ebebeb;
   border-radius: 22px;
   display: flex;
-  justify-content: space-between;
   padding-right: 17px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 .input-search {
   background-color: transparent;
+  width: 100%;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 23px;
   padding-right: 23px;
+}
+.input-search,
+.button-search:focus {
+  outline: none;
 }
 .button-search {
   width: 19px;
@@ -61,7 +69,6 @@
 .icons {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 .icon-search {
   fill: #000;
@@ -83,4 +90,40 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.sidebar {
+  padding-left: 32px;
+}
+.nav-menu {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+.nav-item {
+  margin-bottom: 25px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  text-decoration: none;
+}
+.nav-item .icon {
+  fill: #898989;
+}
+.nav-text {
+  margin-left: 13px;
+}
+.nav-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "MulishRegular";
+  src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
